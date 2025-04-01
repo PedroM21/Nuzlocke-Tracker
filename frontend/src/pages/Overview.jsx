@@ -3,6 +3,7 @@ import EncountersCard from "../components/EncountersCard";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import "../css/Overview.css";
 import NavBar from "../components/NavBar";
+import MobileNavbar from "../components/MobileNavbar";
 
 function Overview() {
   const { runId } = useParams();
@@ -58,7 +59,12 @@ function Overview() {
 
   return (
     <div className="overview-page">
-      <NavBar />
+      <div className="mobile">
+        <MobileNavbar />
+      </div>
+      <div className="laptop">
+        <NavBar />
+      </div>
       <div className="run-details-section">
         <h1 className="completed-header">
           Completed: {details?.completed ? "Yes" : "No"}
