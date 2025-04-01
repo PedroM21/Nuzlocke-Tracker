@@ -52,40 +52,6 @@ runsRoutes.post("/new-run", runsMiddleware, async (req, res) => {
   }
 });
 
-// Create or update a ruleset
-// runsRoutes.post("/:runId/ruleset", runsMiddleware, async (req, res) => {
-//   const { runId } = req.params;
-//   const { ruleSetText } = req.body;
-
-//   try {
-//     const run = await prisma.run.findUnique({
-//       where: { id: parseInt(runId) },
-//     });
-
-//     if (!run || run.userId !== req.userId) {
-//       return res.status(404).json({ error: "Run not found or unauthorized" });
-//     }
-
-//     // Create or update the ruleset for the given run
-//     const ruleset = await prisma.ruleset.upsert({
-//       where: { runId: parseInt(runId) },
-//       update: { ruleSetText },
-//       create: {
-//         ruleSetText,
-//         userId: req.userId,
-//         run: { connect: { id: parseInt(runId) } },
-//       },
-//     });
-
-//     res
-//       .status(201)
-//       .json({ message: "Rules created/updated successfully", ruleset });
-//   } catch (err) {
-//     console.log(err);
-//     res.status(503).json({ err });
-//   }
-// });
-
 // Create run details
 runsRoutes.post("/:runId/details", runsMiddleware, async (req, res) => {
   const { runId } = req.params;

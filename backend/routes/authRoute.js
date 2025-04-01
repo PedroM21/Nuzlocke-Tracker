@@ -56,7 +56,6 @@ authRoutes.post("/sign-up", async (req, res) => {
 
 // handles user log in
 authRoutes.post("/log-in", async (req, res) => {
-  console.log(req.body);
   const { username, password } = req.body;
 
   // Validate user input
