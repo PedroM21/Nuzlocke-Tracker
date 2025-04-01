@@ -1,0 +1,41 @@
+.overview-card {
+  width: 400px;
+  height: 400px;
+  background-color: #34353c;
+  border-radius: 20px;
+}
+
+.completed-header {
+  text-align: center;
+}
+
+.overview-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.runs-button,
+.add-button {
+  color: white;
+  background-color: #d43f3f;
+  box-shadow: #631212 4px 4px 0 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.runs-button:hover,
+.add-button:hover {
+  background-color: #ebcb8b;
+  box-shadow: #725d33 4px 4px 0 0;
+}
+
+.runs-button:active,
+.add-button:active {
+  box-shadow: #631212 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}

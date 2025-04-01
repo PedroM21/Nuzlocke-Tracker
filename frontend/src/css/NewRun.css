@@ -1,0 +1,48 @@
+.new-run-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.new-run-page h1 {
+  text-align: center;
+}
+
+.new-run-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.run-form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: 0;
+  color: #fff;
+  background: transparent;
+  border-bottom: 2px solid #d43f3f;
+}
+
+.run-form-field:focus {
+  border-color: #ebcb8b;
+}
+
+/* ======== Tablet Landscape ======== */
+@media (min-width: 1024px) {
+  .new-run-form {
+    width: 30%;
+    gap: 60px;
+  }
+}

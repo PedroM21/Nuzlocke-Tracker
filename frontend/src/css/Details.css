@@ -1,0 +1,70 @@
+.details-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.details-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  gap: 20px;
+}
+
+.details-page h1 {
+  text-align: center;
+}
+
+.form-field input {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  outline: 0;
+  color: #fff;
+  background: transparent;
+  border-bottom: 2px solid #d43f3f;
+}
+
+.form-field input:focus {
+  border-color: #ebcb8b;
+}
+
+.to-runs-btn {
+  color: white;
+  background-color: #d43f3f;
+  box-shadow: #631212 4px 4px 0 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.to-runs-btn:hover {
+  background-color: #ebcb8b;
+  box-shadow: #725d33 4px 4px 0 0;
+}
+
+.update-button:active,
+.add-button:active {
+  box-shadow: #631212 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* ======== Tablet Landscape ======== */
+@media (min-width: 1024px) {
+  .details-form {
+    width: 30%;
+    gap: 60px;
+  }
+}

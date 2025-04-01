@@ -1,0 +1,12 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 80px;
+  padding: 20px;
+}
+
+.runs-link,
+.log-out {
+  cursor: pointer;
+}
